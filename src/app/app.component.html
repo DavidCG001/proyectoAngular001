@@ -6,6 +6,27 @@
     <h2>Es menor de edad</h2>
 </ng-template>
 
+<ul>
+    <li *ngFor="let nota of notas">
+        {{ nota }}
+    </li>
+</ul>
+
+<table>
+    <tr>
+        <th>Nota</th>
+    </tr>
+    <tr *ngFor="let nota of notas">
+        <td>{{ nota }}</td>
+    </tr>
+</table>
+
+<select name="" id="provincias">
+    <option value="" **ngFor="let provincia of provincias">
+        {{ provincia.nombre }}
+    </option>
+</select>
+
 <!-- <div *ngIf="edad < 18">
     <h2>Es menor de edad</h2>
 </div> -->

@@ -18,4 +18,6 @@ export class AppComponent {
 
   notas = [1,2,3,4,5,6,7,8,9,10];
 
+  provincias = [{id: 1, nombre: 'Alicante'}, {id: 2, nombre: 'Valencia'}, {id: 3, nombre: 'Castellón'}];
+
 }
