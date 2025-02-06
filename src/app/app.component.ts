@@ -20,4 +20,18 @@ export class AppComponent {
 
   provincias = [{id: 1, nombre: 'Alicante'}, {id: 2, nombre: 'Valencia'}, {id: 3, nombre: 'Castellón'}];
 
+  pulsarBoton(){
+    console.log('Has pulsado el botón');
+  }
+
+  contador = 0;
+
+  incrementarContador(){
+    this.contador++;
+  }
+
+  decrementarContador(){
+    this.contador--;
+  }
+
 }

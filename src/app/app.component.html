@@ -22,10 +22,17 @@
 </table>
 
 <select name="" id="provincias">
-    <option value="" **ngFor="let provincia of provincias">
+    <option value="" *ngFor="let provincia of provincias">
         {{ provincia.nombre }}
     </option>
 </select>
+
+<button (click)="pulsarBoton()">Pulsame</button>
+
+<p>Contador {{contador}}</p>
+<button (click)="incrementarContador()">+</button>
+<button (click)="decrementarContador()">-</button>
+
 
 <!-- <div *ngIf="edad < 18">
     <h2>Es menor de edad</h2>
